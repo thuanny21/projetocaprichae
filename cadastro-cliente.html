@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width-device-width, initial-scale-1.0">
+     
+   
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"  media="screen">
+      <link rel="stylesheet" href="bootstrap/css/estilo.css"  media="screen">
+     
+ </head>
+    
+    <body>
+        
+        <!--barra de navegação-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+        <!--logotipo-->
+                <a class="navbar-brand" href="index.html">
+    <img alt="Brand" src="bootstrap/img/caprichae-logo.png" width="220px" alt="">
+  </a>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">Home</a></li>
+             
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+<a href="login.html">
+  <button type="entrar" class="btn btn-default">Entrar</button>
+       </a></li>
+
+        <li>
+        <a href="cadastro-escolha.html">
+          <button type="cadastrar" class="btn btn-default">Cadastrar-se</button>
+            </a>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+</nav>
+         
+        
+        <div class="container">
+            <div class="row">
+                <div class="cabeca-cadastro">
+                <div class="page-header">
+  <h2>Cadastre-se gratuitamente. </h2>
+</div>
+        </div>
+                </div>
+            
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-2">
+                       
+                
+                        <div class="form-cadastro1">
+                        
+                    <!--formulario-->
+
+                    <div class="form-formulario">
+
+                    <form id="cadastro-cliente" name="cadastro" method="POST" action="cadastro-cliente.php">
+
+  <div class="form-group">
+    <!--has-feedback-->
+    <label for="cadName" class="sr-only">Digite seu nome</label>
+      
+    <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp" placeholder="Nome">
+      <!--span class="glyphicon glyphicon-ok form-control-feedback"></span-->
+      </div>
+   
+                       <div class="form-group">
+    <label for="cadSobrenome"class="sr-only">Digite seu sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome" name="sobrenome"aria-describedby="emailHelp" placeholder="Sobrenome">
+      </div>
+                         <!-- escolha de sexo-->
+     <div class="form-group">
+    <label for="cadSexo">Sexo:</label>
+         <label class="checkbox-inline">
+
+    <input type="checkbox" id="sexo" name="sexo" value="Feminino" checked="checked" >Feminino
+             </label>
+         <label class="checkbox-inline">
+    <input type="checkbox" id="sexo" name="sexo" value="Masculino">Masculino
+             </label>
+  </div>
+                                             
+                       <!-- telefones-->
+
+                                     <div class="form-group">
+
+                       
+    <label for="confTel"class="sr-only">Digite o ddd</label>
+                       <input type="text" class="form-control bfh-phone" id="ddd" name="ddd" data-format="(ddd) dddd-dddd" placeholder=" DDD: (xxx)">
+                       </div>
+
+
+
+                       <div class="form-group">
+
+
+    <label for="confTel"class="sr-only">Digite seu telefone </label>
+                       <input type="text" class="form-control bfh-phone" name="telefone"data-format="(ddd) dddd-dddd" id="telefone" placeholder=" Tel:  xxxx-xxxx">
+                       </div>
+
+                       
+                       <div class="form-group">
+    <label for="confCel"class="sr-only">Digite seu celular</label>
+                       <input type="text" class="form-control bfh-phone" name="celular" data-format="(ddd) dddd-dddd" id="celular" placeholder="Cel : x xxxx-xxxx">
+                       </div>
+                            </form>
+                      
+                      <!-- cadastro do login-->
+                     
+                       <form>
+                            <div class="form-group">
+    <label for="email"class="sr-only">Digite seu e-mail</label>
+      
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
+      </div>
+  
+                       <div class="form-group">
+    <label for="cadSenha"class="sr-only">Digite sua senha</label>
+    <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+  </div>
+  
+       
+                      
+     </form>
+                            </div>
+                          </div>  
+                       </div>
+                    </div>
+                </div>
+            
+        
+                            
+                            
+                            <div class="row">
+            <div class=col-lg-6>
+                <div class="col-lg-10">
+                    <div class="form-cadastro2">
+                        
+                        <div class="form-formulario2">
+                    
+                       <form>
+                           
+                    <!--form de escolher estado-->     
+                 <div class="form-group">
+    <label for="cadCep"class="sr-only">Digite Cep</label>
+      
+    <input type="text" class="form-control" id="cep" name="cep" aria-describedby="emailHelp" placeholder="Cep">
+      </div>                           
+                           
+                           <div class="form-group">
+    <label for="cadRua"class="sr-only">Digite o seu endereço</label>
+          <input type="text" class="form-control" id="endereco" name="endereco" aria-describedby="emailHelp" placeholder="Avenida, Rua, Numero, Logradouro...">
+
+         
+
+    
+      </div>
+
+         <div class="form-group">
+
+                 <label for="cadRua"class="sr-only">Digite nome do seu bairro</label>
+
+          <input type="text" class="form-control" id="bairro" name="bairro" aria-describedby="emailHelp" placeholder="Bairro">
+          </div>
+
+                           
+                           <div class="form-group">
+
+
+
+    <label for="cadCidade"class="sr-only">Digite Cidade</label>
+      
+    <input type="text" class="form-control" id="cidade" name="cidade" aria-describedby="emailHelp" placeholder="Cidade">
+      </div>
+                           
+                           <div class="form-group">
+    <label for="cadEstado"class="sr-only">Escolha o Estado</label>
+    <select class="form-control" id="estado" name="estado">
+        <option>Estado</option>
+        <option value="AC">AC</option>
+        <option value="AL">AL</option>
+        <option value="AP">AP</option>
+        <option value="AM">AM</option>
+        <option value="BA">BA</option>
+        <option value="CE">CE</option>
+        <option value="ES">ES</option>
+        <option value="DF">DF</option>
+        <option value="MA">MA</option>
+        <option value="MT">MT</option>
+        <option value="MS">MS</option>
+        <option value="MG">MG</option>
+        <option value="PA">PA</option>
+        <option value="PB">PB</option>
+        <option value="PR">PR</option>
+        <option value="PE">PE</option>
+        <option value="PI">PI</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+        <option value="RS">RS</option>
+        <option value="RO">RO</option>
+        <option value="RR">RR</option>
+        <option value="SC">SC</option>
+        <option value="SP">SP</option>
+        <option value="SE">SE</option>
+        <option value="TO">TO</option>     
+       
+
+    </select>
+  </div>  
+            <div class="form-group">
+    <label for="cadPais"class="sr-only">Escolha o Pais</label>
+    <select class="form-control" id="pais" name=pais">
+        <option>País</option>
+        <option>Brasil</option>
+        
+        
+    </select>
+                
+  </div>      
+                           <div class="form-group">
+    <label for="cadTermo"></label>
+         <label class="checkbox-inline">
+    <input type="checkbox" id="termo" value="1"><p> Ao se cadastrar você está de acordo com os <a href="#"> Termos de Uso</a> e a <a href="#"> Política de Contratação</a> do Caprichaê.com </p>
+                               </label>
+                           </div> 
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+                    
+                    </form>
+
+                </div>
+                                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+         
+        <div class="controle-rodape-cadastro-1"></div>
+        <!-- rodapé-->
+        <div class="footer">
+        <div class="container-fluid">
+           <div class="row-fluid" >
+               <hr/>
+               <p> 2016 Caprichaê.com Todos os Direitos Reservados</p>
+            
+            </div>
+            </div>
+        </div>
+        
+            
+                                  
+                                   
+       
+         <script src="js/jquery-3.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
